@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Users extends CI_Controller {
 
 	public function __construct()
 	{
@@ -31,8 +31,7 @@ class Login extends CI_Controller {
 		else
 		{
 			$registration_data = $this->input->post();
-			$this->load->model('validate');
-			$this->validate->register($registration_data);
+			$this->user->register($registration_data);
 			$this->session->set_flashdata('registration_success', "Registration Successful");
 			redirect('/');
 		}
@@ -50,9 +49,8 @@ class Login extends CI_Controller {
 		}
 		else
 		{	
-			$this->load->model('validate');
 			$login_data = $this->input->post();
-			$user_info = $this->validate->login($login_data);
+			$user_info = $this->user->login($login_data);
 
 			if($user_info) 
 			{
