@@ -8,14 +8,14 @@ if(ENVIRONMENT == 'production')
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'root';
 	$db['default']['password'] = 'root';
-	$db['default']['database'] = 'mydb'; //////////CHANGE THIS TO CURRENT DATABASE//////////
+	$db['default']['database'] = 'logreg'; //////////CHANGE THIS TO CURRENT DATABASE//////////
 }
 else
 {
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'root';
 	$db['default']['password'] = 'root';
-	$db['default']['database'] = 'mydb'; //////////CHANGE THIS TO CURRENT DATABASE//////////
+	$db['default']['database'] = 'logreg'; //////////CHANGE THIS TO CURRENT DATABASE//////////
 }
 
 $db['default']['dbdriver'] = 'mysql';
