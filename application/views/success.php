@@ -14,7 +14,7 @@
 			<p>Last Name: <?= $user['last_name'] ?></p>
 			<p>Email Address: <?= $user['email'] ?></p>
 		</div>
-		<form action="/login/logoff" method="post">
+		<form action="/users/logoff" method="post">
 			<input type="submit" value="Log Off">
 		</form>
 	</div>

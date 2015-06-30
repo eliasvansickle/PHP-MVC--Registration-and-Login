@@ -9,7 +9,7 @@
 	<div id="wrapper">
 		<div id="register">
 			<h2>Register</h2>
-			<form action="/login/validate_register" method="post">
+			<form action="/users/validate_register" method="post">
 				<input type="text" name="first_name" placeholder="First Name">
 				<input type="text" name="last_name" placeholder="Last Name">
 				<input type="text" name="email" placeholder="Email Address">
@@ -22,7 +22,7 @@
 		</div>
 		<div id="login">
 			<h2>Login</h2>
-			<form action="/login/validate_login" method="post">
+			<form action="/users/validate_login" method="post">
 				<input type="text" name="email" placeholder="Email Address">
 				<input type="password" name="password" placeholder="Password">
 				<input type="submit" value="Log In">
